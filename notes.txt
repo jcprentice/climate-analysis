@@ -1,0 +1,36 @@
+git config --global {user.name, user.email, core.editor} "..."
+git config --list
+
+# get started
+cd dir
+git init
+
+# add files
+git add ...
+git add # can be dangerous
+
+git status
+git commit -m "Note about what you've done"
+git log
+
+# wipe all changes you've made before committing
+git reset
+
+git diff
+git diff --staged
+# show 1 change back
+git diff HEAD~1 <filename>
+# <commit id> is something like bbe8233e68...2b63, but can get away with fewer letters
+git diff <commit id> <filename>
+
+git checkout HEAD <deleted file>
+git restore <deleted file>
+
+git remote add origin https://github.com/jcprentice/climate-analysis
+git remote --verbose
+git push origin master
+
+git branch dev
+git branch
+git checkout dev
+
